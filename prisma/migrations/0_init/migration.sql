@@ -16,3 +16,12 @@ CREATE TABLE "Session" (
     "collaborator" BOOLEAN DEFAULT false,
     "emailVerified" BOOLEAN DEFAULT false
 );
+
+-- CreateTable
+CREATE TABLE "WorkOrder" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "price" TEXT NOT NULL DEFAULT '75',
+    "status" TEXT NOT NULL DEFAULT 'In Progress'
+);
+
